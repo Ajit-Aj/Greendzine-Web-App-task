@@ -1,0 +1,47 @@
+/* styles.css */
+
+.bottomnav-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background: transparent linear-gradient(262deg, #0f2323 0%, #0f2323 40%) 0% 0%
+    no-repeat padding-box;
+  top: 70;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  width: 360px;
+  border-radius: 10px;
+  margin: 0 auto;
+  align-items: center;
+  /* animation: slideInUp 0.3s ease-in-out; */
+}
+
+.icon {
+  cursor: pointer;
+}
+/* 
+.icon:hover{
+  background: #000;
+} */
+
+/* .profile-icon:hover{
+  background: #000;
+}
+.home-icon:hover{
+ background: #e4c3c3;
+} */
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
