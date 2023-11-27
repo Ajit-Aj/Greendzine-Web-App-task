@@ -110,7 +110,7 @@ const Profile = () => {
       dob: "08-18-2001",
       role: "Mobile App Developer",
     },
-  ];
+     ];
 
   const [filteredData, setFilteredData] = useState(employeeData);
 
@@ -153,7 +153,7 @@ const Profile = () => {
             <SearchBar searchData={employeeData} onSearch={handleSearch} />
           </div>
 
-          <div className="employeCard-container">
+          <div  className="employeCard-container">
             {filteredData.map((employee, index) => (
               <div
                 key={employee.emp_id}
