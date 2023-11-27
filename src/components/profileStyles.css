@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-parent {
+  background: transparent linear-gradient(180deg, #000000 0%, #000e09 100%) 0%
+    0% no-repeat;
+  mix-blend-mode: normal;
+  border-radius: 28px;
+  opacity: 1;
+  width: 360px;
+  height: 800px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.profile-Dashboard {
+   height: 800px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.help-logo {
+  text-align: end;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.search-bar {
+  /* margin-left: 20px; */
+  margin: 10px;
+  /* padding: 5px; */
+  background: #5e5e5e82 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 4px 0px #00000040;
+  mix-blend-mode: normal;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.4;
+  height: 40px;
+}
+
+.index {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 12.5rem;
+  border-radius: 50%;
+  background-color: #5e5e5e82;
+  font-size: 12px;
+}
+
+.employeCard-container {
+  margin-left: 30px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.employeCard-container::-webkit-scrollbar {
+  display: none; /* This will hide the scrollbar in WebKit browsers */
+}
+
+.employee-card {
+  width: 280px;
+  height: 80px;
+  background: transparent linear-gradient(262deg, #0f2323 0%, #0f2323 40%) 0% 0%
+    no-repeat padding-box;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+.even-card {
+  right: 30px;
+  left: auto;
+}
+
+/* @media (max-width: 768px) {
+  .profile-parent {
+    width: 100%;
+  }
+
+  .profile-Dashboard {
+    width: 100%;
+  }
+
+  .employeeCard-container {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+} */
+
+/* Keyframes for smooth animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to each card */
+
+.profile-Dashboard {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+.employee-card {
+  animation: fadeInUp 1s ease-in-out;
+}

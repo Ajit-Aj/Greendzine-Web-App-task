@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat;
+    mix-blend-mode: normal;
+    border-radius: 28px;
+    opacity: 1;
+    width: 360px;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+
+.help-logo {
+    text-align: end;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #36A546;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 12.5rem;
+    border-radius: 50%;
+    background-color: #5E5E5E82;
+    font-size: 12px;
+}
+
+.employee-Prod-Dashboard {
+    height: 800px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.dashboard-header {
+    margin: 12px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #5E5E5E82; */
+     background: transparent linear-gradient(#5E5E5E82,#595959 0%, #44444440 60%) 0% 0% no-repeat padding-box;
+    padding: 10px;
+    border-radius: 10px;
+    word-spacing: 2px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family:  normal normal bold Source Sans Pro;
+}
+
+.prod-percentage {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.prod-board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: white;
+}
+
+.percentage {
+    margin: 5px;
+    width: calc(var(--data)* 0.8%);
+    height: 10px;
+    background-color: #36A54680;
+    border: 2px solid #36A546;
+    border-radius: 8px;
+}
+
+.prod-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 20px;
+    padding: 10px;
+    background: transparent linear-gradient(262deg, #0F2323 0%, #0F2323 40%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+
+.prod-value {
+    color: #36A546;
+}
+
+.prod-label{
+
+}
+
+
+/* Keyframes for smooth animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.prod-percentage,.percentage, .prod-list,.dashboard-header,.help-logo,.logo {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+.percentage {
+  animation: fadeInUp 1.0s ease-in-out;
+}
