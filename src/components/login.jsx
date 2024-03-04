@@ -12,7 +12,7 @@ const Login = ({ onLoginSuccess }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    if (email === "webapp@gmail.com" && password === "1234") {
+    if (email === "webapp@xyz.com" && password === "12345") {
       // If authentication is successful, navigate to the  home
       navigate("/home");
       console.log("Authentication sucess");
